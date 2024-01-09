@@ -58,7 +58,7 @@ We have provided you with an outline of the bot in [`bot.py`](./groupme-bot/bot.
   - you should be able to run your script and send a message in the GroupMe chat and have your bot respond to you and **only you**, meaning that if someone else sends the same message, **even with the same name**, your bot should not respond to them
     - hint: look at the [`sample.json`](./groupme-bot/sample.json) that shows what other fields you can extract from a response (i.e. `sender_id`)
     - you can view the contents of a response itself by printing `response.json().get("response", {})` located [here](./groupme-bot/bot.py#L31)(this is what is inside the `response` field of the `sample.json` file)
-- [ ] good morning/good night
+- [x] good morning/good night
   - if *anyone* says good morning/good night, your bot should respond with a good morning/good night with their name
     - i.e. if someone says "good morning", your bot should respond with "good morning, <name>"
     - think about how you're going to stop your bot from responding to itself and the other bots in the chat
